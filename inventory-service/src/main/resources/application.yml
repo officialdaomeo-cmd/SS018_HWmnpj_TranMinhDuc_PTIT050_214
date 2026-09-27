@@ -1,0 +1,7 @@
+# TODO Câu 1 + Câu 5: Chuyển các cấu hình dưới đây sang Config Server (config-repo/inventory-service.yml).
+#                    File này chỉ nên giữ lại spring.application.name và spring.config.import
+spring:
+  application:
+    name: inventory-service
+  config:
+    import: optional:configserver:http://localhost:8888
